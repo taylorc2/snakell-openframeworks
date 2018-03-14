@@ -30,3 +30,23 @@
 *.exe
 *.out
 *.app
+
+#Visual Studio Files
+*.rc
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+.vs/*
+bin/*
+obj/*
+packages/*
+packages.config
+
+#Xcode Files
+Makefile
+Project.xcconfig
+config.make
+of-snake.xcodeproj/*
+openFrameworks-Info.plist
+
