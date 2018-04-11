@@ -9,9 +9,21 @@ namespace snakelinkedlist {
 // TODO templatize the list?...
 // TODO iterators?...
 
-// Specialied linked list class
+    struct Node {
+        SnakeBodySegment value_;
+        Node* next_;
+        Node(SnakeBodySegment s) : value_(s), next_(nullptr) {};
+    };
+    
+    // Specialied linked list class
 class LinkedList {
-
+        /*
+         *  Add member variables and private helper functions
+         *  internal structs, classes, or enum types here
+         */
+        
+        Node* list_head_;
+        int length_;
 public:
     LinkedList();                                         // Default constructor
     explicit LinkedList(const std::vector<SnakeBodySegment> &values);  // Initilize from vector

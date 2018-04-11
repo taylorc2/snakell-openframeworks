@@ -116,7 +116,10 @@ void snakeGame::keyPressed(int key){
 }
 
 void snakeGame::reset() {
+    game_snake_.~Snake();
 	game_snake_ = Snake();
+    game_snake_.setDirection(RIGHT);
+    
 	game_food_.rebase();
 	current_state_ = IN_PROGRESS;
 }
